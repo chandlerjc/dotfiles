@@ -29,6 +29,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
+Plugin 'neapel/vim-n3-syntax'
 Plugin 'jph00/swift-apple'
 
 "Plugin 'janko-m/vim-test'
