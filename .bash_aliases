@@ -14,3 +14,13 @@ alias gitssh="perl -pi -e 's#https://github\.com/#git\@github.com:# if /\[remote
 
 a minst="mamba install -c defaults"
 
+a ls="ls -v --color=auto
+
+# # linked data 
+# Some handy shortcuts
+alias curtle='curl -H "Accept: text/turtle"'
+alias curltrig='curl -H "Accept: application/trig"'
+alias curltriples='curl -H "Accept: application/n-triples"'
+alias curlquads='curl -H "Accept: application/n-quads"'
+alias curlson='curl -H "Accept: application/json"'
+alias curld='curl -H "Accept: application/ld+json"'"
