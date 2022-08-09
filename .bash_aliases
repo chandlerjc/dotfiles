@@ -19,19 +19,22 @@ a jl="jupyter lab --no-browser"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 a grep='grep  --color=auto --exclude-dir={.git}'
-a ls='gls -v --color=auto'
+a ls='ls -v --color=auto'
 a ll="ls -l"
 a l="ls -CF"
 a ip='ipython --no-banner'
 a pip-update="pip install --upgrade pip && pip freeze --local | grep -v \
   '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
 a pi="pip install -U --user"
+a nvi="nvidia-smi"
+a nvdm="nvidia-smi dmon"
 
 alias latex-update="tlmgr update --self --all --reinstall-forcibly-removed"
 alias py="python"
 alias jn='jupyter notebook'
 alias jl='jupyter lab'
 alias preview="open -a /Applications/Preview.app"
+
 
 
 alias sudo='sudo -E'  # Use current user configs

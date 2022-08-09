@@ -33,11 +33,14 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 export HISTTIMEFORMAT="%d/%m/%y %T "
+
 # Essential bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]
-then
-    source $(brew --prefix)/etc/bash_completion
-fi
+if [ -x "$(command -v brew)" ]; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]
+    then
+      source $(brew --prefix)/etc/bash_completion
+    fi
+  fi
 
 # Fix Catalina zsh shit warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -83,8 +86,9 @@ vibashl () {
   . ~/.bashrc
 }
 
-eval "$(gh completion -s bash)"
-
+if [ -x "$(command -v gh)" ]; then
+  eval "$(gh completion -s bash)"
+fi
 
 # Create ssh tunnel via cims for Jupyter Notebook
 # Run as: nb server_name
