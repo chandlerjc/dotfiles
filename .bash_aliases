@@ -8,7 +8,7 @@ a issue="gh issue create"
 a enhancement="gh issue create -l enhancement -b '' -t"
 a bug="gh issue create -l bug -b '' -t"
 a breaking="gh issue create -l breaking -b '' -t"
-a note="gh issue -R jph00/notes create"
+# a note="gh issue -R charlesvardeman/notes create"
 
 alias gitssh="perl -pi -e 's#https://github\.com/#git\@github.com:# if /\[remote \"origin/../fetch =/' .git/config"
 
@@ -25,6 +25,8 @@ a l="ls -CF"
 a ip='ipython --no-banner'
 a pip-update="pip install --upgrade pip && pip freeze --local | grep -v \
   '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+a pi="pip install -U --user"
+
 alias latex-update="tlmgr update --self --all --reinstall-forcibly-removed"
 alias py="python"
 alias jn='jupyter notebook'
@@ -59,11 +61,13 @@ export CRC="crc.nd.edu"
 export FE1="crcfe01.$CRC"
 export FE2="crcfe02.$CRC"
 export CAML="caml.$CRC"
+export JLC="jupyter-caml.$CRC"
 
 # and corresponding ALIASes
-alias FE1="ssh $FE1"
-alias CAML="ssh $CAML"
+alias fe1="ssh $FE1"
+alias caml="ssh $CAML"
+alias jlc="ssh $JLC"
 
 # with X forwarding
-alias FE1X="ssh -Y $FE1"
+alias fe1x="ssh -Y $FE1"
 
