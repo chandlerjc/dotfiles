@@ -32,7 +32,7 @@ a nvdm="nvidia-smi dmon"
 alias latex-update="tlmgr update --self --all --reinstall-forcibly-removed"
 alias py="python"
 alias jn='jupyter notebook'
-alias jl='jupyter lab'
+alias jl='jupyter lab --no-browser --port=8889'
 alias preview="open -a /Applications/Preview.app"
 
 
