@@ -14,7 +14,7 @@ alias gitssh="perl -pi -e 's#https://github\.com/#git\@github.com:# if /\[remote
 
 a minst="mamba install -c defaults"
 
-a jl="jupyter lab --no-browser"
+a jl="jupyter lab  --no-browser --port=8889"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -32,7 +32,7 @@ a nvdm="nvidia-smi dmon"
 alias latex-update="tlmgr update --self --all --reinstall-forcibly-removed"
 alias py="python"
 alias jn='jupyter notebook'
-alias jl='jupyter lab --no-browser --port=8889'
+alias jl='jupyter lab'
 alias preview="open -a /Applications/Preview.app"
 
 
